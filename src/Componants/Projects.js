@@ -1,22 +1,30 @@
 import React from 'react'
+import begetpng from '../Assets/beget.png';
+import youtube from '../Assets/Youtube.png';
+// import shoekart from '../Assets/ShoeKArt2.png';
+import shoekart1 from '../Assets/Shoekart1.png';
+
+
+
+
 
 function Projects() {
     const config = {
         projeccts: [
             {
-                image: "",
-                discription: ' A Ecomerce Wensite. Built wih  SpringBoot',
-                link: ''
+                image:shoekart1,
+                discription: 'A Ecomerce Wensite. Built wih  SpringBoot',
+                link:'https://github.com/KilaparthiBhargav/Shoe-Kart-Ecommerce-Website.git'
             },
             {
-                image: "",
-                discription: 'Beget Food Restaurant website, Built with JAva SpringBoot',
-                link: ''
+                image:begetpng,
+                discription: 'Beget Food Restaurant website, Built with Java SprigBoot',
+                link:'https://github.com/KilaparthiBhargav/Beget-Restaurant-with-spring-boot.git'
             },
             {
-                image: "",
+                image:youtube,
                 discription: 'Youtube Clone ,Built with basic HTML,CSS & JavaScript',
-                link: ''
+                link:'https://github.com/KilaparthiBhargav/YoutubeReplicate.git'
             }
 
         ]
@@ -35,13 +43,13 @@ function Projects() {
 
                     {config.projeccts.map((prject) => (
                         <div className='relative'>
-                            <img className='h-[200px] w-[300px] border bg-red-600' src={prject.image} />
+                            <img className='h-[200px] w-[300px] border projectimmage' src={prject.image} alt='project img'/>
                             <div className='project-disc'>
                                 <p className='text-center py-5'>
                                     {prject.discription}
                                 </p>
                                 <div className='flex justify-center'>
-                                    <a className='btn text-white' target='_blank' href={prject.link}> View Project</a>
+                                    <a className='btn text-white' target='_blank'  rel="noopener noreferrer" href={prject.link}> View Project</a>
                                 </div>
                             </div>
                         </div>

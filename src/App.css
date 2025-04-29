@@ -28,12 +28,15 @@ padding: 10px
     @apply w-full h-full text-center border-b-2 p-1;
 }
 .project-disc{
-    @apply absolute right-0 left-0 bottom-0 top-0 bg-white opacity-0 hover:opacity-70 duration-500
+    @apply absolute text-white right-0 left-0 bottom-0 top-0 p-6 bg-black opacity-0 hover:opacity-90 duration-500
 }
 .btn{
-    @apply bg-blue-800 px-5 py-2 font-bold hover:border-2 border-[white] rounded
+    @apply bg-blue-800 px-5 py-2 font-bold opacity-100 hover:border-2 border-[white] rounded
 }
 html {
     /* scroll-behavior: auto; */
     scroll-behavior: smooth;
+}.projectimmage{
+    
+  
 }
