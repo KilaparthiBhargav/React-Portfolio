@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+navbar ul li{
+    @apply px-2;
+}
+.bg-primary{
+    background: black;
+  
+}
+.bg-secondary{
+    background: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkicons a{
+padding: 10px
+}.linkicons a:hover{
+    @apply text-blue-600
+}
+
+.mobile-nav{
+    @apply fixed top-20 left-0 bg-gray-900 w-full;
+}
+.mobile-nav li{
+    @apply w-full h-full text-center border-b-2 p-1;
+}
+.project-disc{
+    @apply absolute right-0 left-0 bottom-0 top-0 bg-white opacity-0 hover:opacity-70 duration-500
+}
+.btn{
+    @apply bg-blue-800 px-5 py-2 font-bold hover:border-2 border-[white] rounded
+}
+html {
+    /* scroll-behavior: auto; */
+    scroll-behavior: smooth;
+}
