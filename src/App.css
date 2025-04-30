@@ -10,7 +10,7 @@ navbar ul li{
   
 }
 .bg-secondary{
-    background: #121212;
+    background-color :hsl(250, 100%, 6%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,24 @@ html {
     /* scroll-behavior: auto; */
     scroll-behavior: smooth;
 }.projectimmage{
-    
-  
+  height: 180px;
+}
+.navicon{
+ padding: 10px;
+ gap: 20px; 
+}.navicon li{
+    border-radius: 10px;
+    position: relative;
+}
+.navicon li:hover::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+   
+    background-color: #0015ff;
+    height: 3px;
+    border-radius: 10px;
+    width:100%;
+ 
 }

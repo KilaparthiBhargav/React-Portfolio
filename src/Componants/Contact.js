@@ -7,7 +7,7 @@ const config={
 }
 
     return (
-        <section className='flex flex-col px-5 py-32 bg-gray-950' id='contact'>
+        <section className='flex flex-col px-5 py-32 bg-secondary' id='contact'>
 
             <div className='flex flex-col items-center text-white '>
                 <h1 className='text-4xl border-b-4 border-[#2020d3] mb-3 w-max' >
