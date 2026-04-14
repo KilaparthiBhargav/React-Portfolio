@@ -13,7 +13,7 @@ export const Header = () => {
       <ul className='flex text-white navicon'>
         <li><a href='/'>Home</a></li>
         <li><a href='#about'>About</a></li>
-        <li><a href='#projects'>Projuct</a></li>
+        <li><a href='#projects'>Project</a></li>
         <li><a href='#resume'>Resume</a></li>
         <li><a href='#contact'>Contact</a></li>
        </ul>
@@ -23,7 +23,7 @@ export const Header = () => {
       <ul onClick={()=>setToggleMenu(!togglemenu)}  className='flex flex-col mobile-nav text-white p-5'>
       <li><a href='/'>Home</a></li>
         <li><a href='#about'>About</a></li>
-        <li><a href='#projects'>Projuct</a></li>
+        <li><a href='#projects'>Project</a></li>
         <li><a href='#resume'>Resume</a></li>
         <li><a href='#contact'>Contact</a></li>
        </ul>
