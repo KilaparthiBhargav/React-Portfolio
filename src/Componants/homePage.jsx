@@ -88,11 +88,10 @@ export default function Home() {
           </div>
     </section>
 
-    
-
       {/* ABOUT */}
       <About />
-    <Resume />
+
+      <Resume />
 
       {/* PROJECTS */}
       <Projects />
