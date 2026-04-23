@@ -30,7 +30,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 bg-gradient-to-b from-black via-gray-900 to-black text-white"
+      className="py-24 bg-gradient-to-b from-black via-gray-900 to-black text-white relative z-99"
     >
       <div className="max-w-6xl mx-auto px-6">
 

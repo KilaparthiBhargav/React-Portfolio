@@ -100,7 +100,7 @@ export default function Home() {
       <ContactUs />
 
       {/* FOOTER */}
-      <footer className="bg-black text-white text-center py-6">
+      <footer className="bg-black text-white text-center py-6 relative z-99">
        
         © Bhargav 2025 . All Rights Reserved.
       </footer>

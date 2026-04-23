@@ -9,7 +9,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gray-900 text-white"
+      className="py-20 bg-gray-900 text-white relative z-99"
     >
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 

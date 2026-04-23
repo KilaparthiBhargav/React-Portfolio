@@ -9,9 +9,9 @@ function Resume() {
   return (
     <section
       id="resume"
-      className="py-20 bg-gray-900 text-white"
+      className="py-20 bg-gray-900 text-white relative z-99"
     >
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center ">
         
         {/* LEFT - IMAGE + STATS */}
         <div className="flex flex-col items-center gap-6">

@@ -1,103 +1,57 @@
-import Particles from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
-import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
-function HeroParticles() {
-  const particlesInit = useCallback(async (engine) => {
+const ParticlesBg = () => {
+  const init = async (engine) => {
     await loadSlim(engine);
-  }, []);
+  };
 
   return (
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      className="absolute inset-0 z-0"
-     options={{
-  fullScreen: {
-    enable: true,
-    zIndex: 0
-  },
+  <Particles
+  init={init}
+  options={{
+    fullScreen: { enable: true },
+    background: { color: "#050816" },
 
-  fpsLimit: 120,
-  detectRetina: true,
+    particles: {
+      number: { value: 80 },
+      color: { value: "#ffffff" },
+      size: { value: { min: 1, max: 3 } },
 
-  background: {
-    color: "#000000"
-  },
-
-  particles: {
-    number: {
-      value: 80,
-      density: {
+      move: {
         enable: true,
-        width: 1920,
-        height: 1080
-      }
-    },
-
-    color: {
-      value: "#ffffff"
-    },
-
-    shape: {
-      type: "circle"
-    },
-
-    opacity: {
-      value: 0.5
-    },
-
-    size: {
-      value: { min: 1, max: 3 }
-    },
-
-    move: {
-      enable: true,
-      speed: 2,
-      direction: "none",
-      outModes: {
-        default: "out"
-      }
-    },
-
-    links: {
-      enable: true,
-      distance: 120,
-      color: "#ffffff",
-      opacity: 0.4,
-      width: 1
-    }
-  },
-
-  interactivity: {
-    detectsOn: "window",
-
-    events: {
-      onHover: {
-        enable: true,
-        mode: "repulse"
-      },
-      onClick: {
-        enable: true,
-        mode: "push"
-      },
-      resize: true
-    },
-
-    modes: {
-      repulse: {
-        distance: 200,
-        duration: 0.4
+        speed: 0.5, // slow = smooth
       },
 
-      push: {
-        quantity: 4
-      }
-    }
-  }
-}}
-    />
+      opacity: {
+        value: 0.5,
+      },
+
+      links: {
+        enable: true,
+        distance: 140,
+        color: "#8888ff",
+        opacity: 0.2,
+        width: 1,
+      },
+    },
+
+    interactivity: {
+      events: {
+        onHover: {
+          enable: true,
+          mode: "grab",
+        },
+      },
+      modes: {
+        grab: {
+          distance: 150,
+        },
+      },
+    },
+  }}
+/>
   );
-}
+};
 
-export default HeroParticles;
+export default ParticlesBg;

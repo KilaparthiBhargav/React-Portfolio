@@ -1,5 +1,5 @@
 import React from "react";
-import aboutimg from "../Assets/Bhargav-profile.jpg";
+import aboutimg from "../Assets/img2.jpeg";
 
 function About() {
   const skills = [
@@ -17,7 +17,7 @@ function About() {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-950 text-gray-200">
+    <section id="about" className="py-20 bg-gray-950 text-gray-200 relative ">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
 
         {/* IMAGE */}
